@@ -1,128 +1,108 @@
-**Heart Disease Prediction System
-**
-An end-to-end Machine Learning web application that predicts the risk of heart disease using patient health parameters.
-The project demonstrates a complete ML workflow including data handling, model training, evaluation, and real-time prediction through a web interface.
+**Project Description**
 
-This project was developed as part of an internship program to gain hands-on experience with industry-oriented Machine Learning applications.
+This project is a Machine Learning–based web application that predicts the risk of heart disease using patient health information.
+The system allows users to train a model, evaluate its performance, and predict heart disease risk through an interactive web interface.
 
-**Problem Statement
-**
-Heart disease is one of the leading causes of death worldwide. Early prediction can help in timely diagnosis and preventive care.
+The project demonstrates the end-to-end ML workflow, including data preprocessing, model training, evaluation, API development, and frontend integration.
 
-The objective of this project is to:
+**Problem Addressed**
 
-Analyze patient health data
+Heart disease is one of the leading causes of death worldwide.
+Early prediction helps in preventive care and medical decision-making.
 
-Train a machine learning model
+**This system aims to assist in:**
 
-Predict whether a person is at high risk or low risk of heart disease
+Identifying high-risk patients
 
-Display prediction results with confidence score
+Supporting early diagnosis
 
-**Project Objectives
-**
-Build an end-to-end ML pipeline
+Demonstrating real-world ML deployment
 
-Implement model training and evaluation
+**Dataset Used**
+https://www.kaggle.com/datasets/rashadrmammadov/heart-disease-prediction
 
-Develop REST APIs using FastAPI
+**The dataset contains patient medical and lifestyle information such as:**
 
-Create a clean and interactive UI using Streamlit
+Age
+Gender
+Cholesterol
+Blood Pressure
+Heart Rate
+Blood Sugar
+Smoking Status
+Alcohol Intake
+Exercise Hours
+Stress Level
+Family History
+Diabetes
+Obesity
+Chest Pain Type
+Exercise Induced Angina
+**Target Variable:**
 
-Simulate a real-world ML deployment workflow
+1 → High Risk of Heart Disease
+0 → Low Risk of Heart Disease
 
-**Machine Learning Workflow**
-
-Dataset Upload
-
-CSV files for training and testing
-
-Data Preprocessing
-
-Handling categorical features
-
-Feature scaling
-
-Data validation
-
-Model Training
-
-Random Forest Classifier
-
-Model Evaluation
-
-Accuracy
-
-Classification report
-
-Prediction
-
-Single patient prediction
-
-Confidence score display
-
-**Tech Stack
-**Programming Language
+**Technologies Used**
 
 Python
 
-Backend
+Scikit-learn – Machine Learning
 
-FastAPI
+Pandas & NumPy – Data handling
 
-Scikit-learn
+FastAPI – Backend REST APIs
 
-Pandas
+Streamlit – Frontend web interface
 
-NumPy
-
-Joblib
-
-Frontend
-
-Streamlit
-
-Custom CSS for UI styling
+Joblib – Model serialization
 
 Machine Learning Model
 
 Random Forest Classifier
 
-**Dataset Description
-**
+Handles both numerical and categorical features
 
-**The dataset contains patient health attributes such as:
-**Age
+Provides prediction probability (confidence score)
 
-Gender
+**Features**
 
-Cholesterol
+Upload dataset for model training
 
-Blood Pressure
+Upload dataset for model evaluation
 
-Heart Rate
+Displays accuracy and classification report
 
-Blood Sugar
+Patient data input through UI
 
-Smoking Status
+**Predicts:**
 
-Alcohol Intake
+High Risk or Low Risk
 
-Exercise Hours
+Prediction confidence percentage
 
-Stress Level
+Clean, centered, and user-friendly interface
 
-Family History
+Modular and extendable architecture
 
-Diabetes
+**Application Workflow**
 
-Obesity
+Upload training dataset
 
-Exercise Induced Angina
+Train the ML model
 
-Chest Pain Type
+Upload testing dataset
 
-Target Variable
+Evaluate model performance
 
+Enter patient details
 
-Just say the word 😄
+Get heart disease risk prediction
+
+**Output**
+
+**The application displays:**
+
+Heart Disease Risk (High / Low)
+
+Confidence Score (%)
