@@ -2,7 +2,6 @@
 
 This project is a Machine Learning–based web application that predicts the risk of heart disease using patient health information.
 The system allows users to train a model, evaluate its performance, and predict heart disease risk through an interactive web interface.
-
 The project demonstrates the end-to-end ML workflow, including data preprocessing, model training, evaluation, API development, and frontend integration.
 
 **Problem Addressed**
