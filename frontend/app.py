@@ -4,14 +4,13 @@ import pandas as pd
 
 API = "http://127.0.0.1:8000"
 
-# ---------------- PAGE CONFIG ----------------
+
 st.set_page_config(
     page_title="Heart Disease Predictor",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
 
-# ---------------- CUSTOM CSS ----------------
 st.markdown("""
 <style>
 .center-title {
@@ -28,7 +27,6 @@ button[kind="primary"] {
 </style>
 """, unsafe_allow_html=True)
 
-# ---------------- HEADER ----------------
 st.markdown(
     '<div class="center-title">❤️ Heart Disease Prediction System</div>',
     unsafe_allow_html=True
@@ -65,7 +63,6 @@ with tabs[0]:
         else:
             st.warning("Please upload testing dataset")
 
-# ================= PREDICTION TAB =================
 with tabs[1]:
     st.subheader("🧑‍⚕️ Patient Information")
 
@@ -112,7 +109,6 @@ with tabs[1]:
 
     st.divider()
 
-    # ---- Predict button LEFT, Result RIGHT ----
     left, right = st.columns([1, 3])
 
     with left:
@@ -157,7 +153,6 @@ with tabs[1]:
                     f"✅ Low Risk of Heart Disease\n\nConfidence: {confidence:.1f}%"
                 )
 
-# ================= ABOUT TAB =================
 with tabs[2]:
     st.markdown("""
 ### ℹ️ About Project
@@ -172,3 +167,4 @@ A clean, compact and industry-grade ML application.
 - Random Forest
 - Scikit-learn
 """)
+
